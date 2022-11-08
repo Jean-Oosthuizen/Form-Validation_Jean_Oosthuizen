@@ -6,6 +6,20 @@
         <script src="js/validate.js" defer></script>
     </head>
     <body>
-
+        <form action="post">
+            <label for="newTask">New Task</label>
+            <input type="text" name="newTask" id="newTask">
+            <br>
+            <label for="description">Task Description</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <br>
+            <label for="date">Set Task Date</label>
+            <input type="date" name="date" id="date">
+            <br>
+            <label for="time">Set Task Due Time</label>
+            <input type="time" name="time" id="time">
+            <br>
+            <input type="submit" value="submit">
+        </form>
     </body>
 </html>
