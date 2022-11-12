@@ -8,42 +8,34 @@
         <script src="js/validate.js" defer></script>
     </head>
     <body>
-        <h1>Form:</h1>
-        <form method="get">
+        <div class="formContainer">
+            <form method="get">
+                <h1>Form</h1>
+                <div class="formStyle">
+                    <label for="newTask">New Task</label>
+                    <input type="text" id="newTask" required>
+                    
+                    <!--Error message that appears if the form was submitted with either '<' or '>' 
+                        inside the newTask field-->
+                    <p id="error" class="spanTwo">Error, this field does not accept either of the characters &#62 or &#60</p>
+                    
+                    <label for="description">Task Description</label>
+                    <textarea id="description" cols="30" rows="10"></textarea>
 
-            
-            <label for="newTask">New Task</label>
-            <input type="text" id="newTask" required>
-            
-            <!--Error message that appears if the form was submitted with either '<' or '>' 
-                inside the newTask field-->
-            <p id="error">Error, this field does not accept either of the characters &#62 or &#60</p>
+                    <label for="date">Set Task Date</label>
+                    <input type="date" id="date" required>
 
-            <br>
-            
-            <!--Description field-->
-            <label for="description">Task Description</label>
-            <textarea id="description" cols="30" rows="10"></textarea>
+                    <label for="time">Set Task Due Time</label>
+                    <input type="time" id="time" required>
 
-            <br>
-            
-            <!--Date field-->
-            <label for="date">Set Task Date</label>
-            <input type="date" id="date" required>
+                    <!--Submit button-->
+                    <input type="button" value="Submit" class="spanTwo" onclick="validate()"> 
 
-            <br>
-            
-            <!--Time field-->
-            <label for="time">Set Task Due Time</label>
-            <input type="time" id="time" required>
-
-            <br>
-
-            <!--Submit button-->
-            <input type="button" value="submit" onclick="validate()"> 
-
-            <!--Empty list. A list element will be added with Javascript-->
-            <ul id="unorderedList"></ul>
-        </form>
+                    <!--Empty list. A list element will be added with Javascript-->
+                    <br>
+                    <ul id="unorderedList"></ul>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
