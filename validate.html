@@ -3,36 +3,47 @@
     <head>
         <title>Form Validation</title>
         <link rel="stylesheet" href="css/validate.css" type="text/css">
+        <!--I prefer to place all of the links to external documents in the head of the page. 
+            I use defer to ensure the javascript loads last-->
         <script src="js/validate.js" defer></script>
     </head>
     <body>
-        <form method="get" id="form">
+        <h1>Form:</h1>
+        <form method="get">
+
+            
             <label for="newTask">New Task</label>
             <input type="text" id="newTask" required>
-
-            <p id="error">Error, this field does not accept the characters &#62 and &#60</p>
+            
+            <!--Error message that appears if the form was submitted with either '<' or '>' 
+                inside the newTask field-->
+            <p id="error">Error, this field does not accept either of the characters &#62 or &#60</p>
 
             <br>
-
+            
+            <!--Description field-->
             <label for="description">Task Description</label>
             <textarea id="description" cols="30" rows="10"></textarea>
 
             <br>
-
+            
+            <!--Date field-->
             <label for="date">Set Task Date</label>
             <input type="date" id="date" required>
 
             <br>
-
+            
+            <!--Time field-->
             <label for="time">Set Task Due Time</label>
             <input type="time" id="time" required>
 
             <br>
 
+            <!--Submit button-->
             <input type="button" value="submit" onclick="validate()"> 
 
-            <ul id="unorderedList">
-            </ul>
+            <!--Empty list. A list element will be added with Javascript-->
+            <ul id="unorderedList"></ul>
         </form>
     </body>
 </html>
