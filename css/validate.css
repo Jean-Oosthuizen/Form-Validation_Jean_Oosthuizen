@@ -12,8 +12,9 @@ label{
     background-color: antiquewhite;
 }
 li{
-    /*Changes bullet points to an emojie*/
+    /*Changes bullet points to a specific unicode character*/
     list-style-type: "\1F393";
+    padding-left: 5px;
 }
 .formContainer{
     width: 100%;
