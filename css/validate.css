@@ -2,9 +2,6 @@ html{
     background-color: aliceblue;
     font-family: sans-serif;
 }
-h1{
-    text-align: center;
-}
 img{
     display: block;
     margin-left: auto;
@@ -29,6 +26,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .formStyle{
     /*Places labels and inputs in a grid so that the form looks tabular and less messy*/
