@@ -15,5 +15,3 @@ function validate(){
         document.getElementById("unorderedList").appendChild(listElement);
     }
 }
-
-//Creates list element, places text in the element, then places the element in the HTML page
