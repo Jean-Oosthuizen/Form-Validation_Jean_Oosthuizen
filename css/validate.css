@@ -32,10 +32,19 @@ li{
     grid-column: span 2;
     padding: 10px;
 }
+#success{
+    margin: 0px;
+    background-color: greenyellow;
+    border: 1px solid green;
+    /*Styling that initially hides the success message*/
+    display: none;
+    text-align: center;
+}
 #error{
     margin: 0px;
     background-color: pink;
     border: 1px solid red;
     /*Styling that initially hides the error message*/
     display: none;
+    text-align: center;
 }

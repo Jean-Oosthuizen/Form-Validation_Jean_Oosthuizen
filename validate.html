@@ -17,7 +17,7 @@
                     
                     <!--Error message that appears if the form was submitted with either '<' or '>' 
                         inside the newTask field-->
-                    <p id="error" class="spanTwo">Error, this field does not accept either of the characters &#62 or &#60</p>
+                    <p id="error" class="spanTwo">Error, does not accept either of the characters &#60 or &#62</p>
                     
                     <label for="description">Task Description</label>
                     <textarea id="description" cols="30" rows="10"></textarea>
@@ -30,6 +30,9 @@
 
                     <!--Submit button-->
                     <input type="button" value="Submit" class="spanTwo" onclick="validate()"> 
+
+                    <p id="success" class="spanTwo">Success!</p>
+                    
 
                     <!--Empty list. A list element will be added with Javascript-->
                     <br>
