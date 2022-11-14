@@ -16,6 +16,10 @@ li{
     list-style-type: "\1F393";
     padding-left: 5px;
 }
+a{
+    color: rgba(255, 166, 0, 0.692);
+    text-decoration: none;
+}
 .formContainer{
     width: 100%;
     display: flex;
